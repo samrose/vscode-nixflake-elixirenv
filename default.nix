@@ -5,7 +5,10 @@ let
 
   myvscode = pkgs.vscode-with-extensions.override {
     vscodeExtensions = with pkgs.vscode-extensions; [
-      ms-python.python
+      elixir-lsp.vscode-elixir-ls
+      jnoortheen.nix-ide
+      eamodio.gitlens
+      github.copilot
     ];
   };
 
